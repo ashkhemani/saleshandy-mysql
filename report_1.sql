@@ -1,0 +1,1 @@
+SELECT SUM(d.total_amount) as Credit_Card_Total FROM transaction_detail d JOIN payment_types p ON d.method_id = p.method_id AND p.payment_type="Credit_card" AND d.transact_time BETWEEN Date('2021-05-24') AND Date('2021-06-04');
